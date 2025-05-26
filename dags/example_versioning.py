@@ -21,14 +21,9 @@ def dag_versioning_example():
     def task_2():
         print("Hello! tast_2")
     
-    @task
-    def task_3():
-        print("Hello! tast_3")
-    
     chain(
         task_1(),
         task_2(),
-        task_3(),
     )
 
 
